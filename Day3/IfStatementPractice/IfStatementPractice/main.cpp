@@ -9,78 +9,95 @@
 
 int main(int argc, const char * argv[]) {
     int age ;
-    std::cout<< "How old are you? \n";
-    std::cin>> age;
-    if ( age > 17 ) {
-        std::cout<< " You are able to vote \n"; //Have to be 18 to vote
+    
+    /*Prompting user for age. If older than 17 can vote else unable to vote. Same process used for running for senate only difference is you need to be older than 29 instead of 17*/
+        std::cout<< "How old are you? \n";
+        std::cin>> age;
+            if ( age > 17 ) {
+                    std::cout<< " You are able to vote \n";
     }
     
-    else {
-        std::cout<< " You are unable to run for vote \n";
+            else {
+                    std::cout<< " You are unable to vote \n";
     }
-    if (age > 29 ) {
-        std::cout<< " You are able to run for senate \n"; // Have to be 30 to run for senate
+    
+    
+            if (age > 29 ) {
+                    std::cout<< " You are able to run for senate \n"; // Have to be 30 to run for senate
     }
-    else {
-        std::cout<< " You are unable to run for senate \n";
+            else {
+                    std::cout<< " You are unable to run for senate \n";
     }
-    if ( age >= 80 ) {
-        std::cout<< " You are part of the greatest generation \n"; /* Have to be at least 80 or older to be considered part of the greatest generation*/
+    
+    /*Setting parameters sequentially from oldest generation to youngest. IKid only has else becuase all other parameter fufill a generation assignment as well as it ends our if conditions*/
+            if ( age >= 80 ) {
+                    std::cout<< " You are part of the greatest generation \n";
     }
-    else if (age < 80 && age >= 60) {
-        std::cout<< " You are a part of the baby boomer generation \n"; /* To be a baby boomer you have to be at least 60 but younger than 80*/
+            else if (age < 80 && age >= 60) {
+                std::cout<< " You are a part of the baby boomer generation \n";
+            }
+            else if (age < 60 && age >= 40 ) {
+                    std::cout<< " You are a in generation x \n ";
     }
-    else if (age < 60 && age >= 40 ) {
-        std::cout<< " You are a in generation x \n "; /* To be in generation x you have to be younger than 60 but at least 40 or older*/
+            else if (age < 40 && age >= 20) {
+                    std::cout<< " You are a millennial \n";
     }
-    else if (age < 40 && age >= 20) {
-        std::cout<< " You are a millennial \n"; /* to be a millennial you have to be younger than 40 but at least 20 or older*/
+            else {
+                    std::cout<< " You are and IKid \n";
     }
-    else {
-        std::cout<< " You are and IKid \n"; // If younger than 20 you are an IKid
-    }
-    char weekday, holiday, children; // character variables
+    
+    //Character variables are assigned to weekday, holiday, and children
+    /*bools are assigned to the condition of the characters becuase they can either be true or false*/
+    char weekday, holiday, children;
     bool isWeekday;
     bool isHoliday;
-    bool hasChildren; // all bools can be true or false
+    bool hasChildren;
     
-    
+    /*Giving yes or no answer choices to questions about character variables*/
+    //Assigning Y to true and anything else represents false
     std::cout<< " Is it a weekday (Y/N)? \n";
     std::cin>> weekday ;
     std::cout<< " Is it a holiday (Y/N)?\n";
     std::cin>> holiday ;
-    std::cout<< " Do you have children? (Y/N) \n"; /*Giving yes or no answer choices to questions about character variables*/
+    std::cout<< " Do you have children? (Y/N) \n";
     std::cin>> children ;
-    if (weekday == 'Y') {
+        if (weekday == 'Y') {
         isWeekday = true;
-    } //Assigning Y to represent true
-    else {
+    }
+        else {
         isWeekday = false;
-    } // anything else represents false
-    if (holiday == 'Y') {
+    }
+    
+        if (holiday == 'Y') {
         isHoliday = true;
     }
-    else {
+        else {
         isHoliday = false;
     }
-    if (children == 'Y') {
+    
+        if (children == 'Y') {
         hasChildren = true;
     }
-    else {
+        else {
         hasChildren = false;
     }
     
-    if( hasChildren ) {
-        std::cout<< " You are unable to sleep in \n"; /* If user has children automatically they cannot sleep in*/
+    //If user has children they cannot sleep in
+    //If it is a weekday user cannot sleep in
+    //If it is a holiday and the user does not have children they can sleep in
+    //If it is not a weekday and the user does not have children they can sleep in
+    
+        if( hasChildren ) {
+        std::cout<< " You are unable to sleep in \n";
     }
-    else if( !isWeekday  && !hasChildren ) {
-        std::cout<< " You are able to sleep in \n "; /* If it is not a weekday and the user does not have children then they can sleep in*/
+        else if( !isWeekday  && !hasChildren ) {
+        std::cout<< " You are able to sleep in \n ";
     }
-    else if ( isWeekday ) {
-        std::cout<< " You are unable to sleep in \n"; /* If it is a weekday user cannot sleep in */
+        else if ( isWeekday ) {
+        std::cout<< " You are unable to sleep in \n";
         }
-    else if ( isHoliday && !hasChildren) {
-        std::cout<< " You are able to sleep in \n "; /* IF it is a holiday and the user does not have children then they can sleep in*/
+        else if ( isHoliday && !hasChildren) {
+        std::cout<< " You are able to sleep in \n "; 
     }
     
     
