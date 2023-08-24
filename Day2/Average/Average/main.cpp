@@ -8,26 +8,30 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
+    
+    /*Prompt user to enter 5 assingment scores but first assign each assignment score a variable. Integer assignment because they are all whole numbers. Average is a float because you can have a decimal*/
     int assignmentScore1;
-    std::cout<< " Please enter your assignment scores one by one:\n";
-    std::cin>> assignmentScore1 ;//making each test score a variable
-    std::cout<< '\n'; // to create a space between assignment score
-    int assignmentScore2 ;
-    std::cin>> assignmentScore2 ;
-    std::cout<< '\n';
+    int assignmentScore2;
     int assignmentScore3;
-    std::cin>> assignmentScore3 ;
-    std::cout<< '\n';
-    int assignmentScore4 ;
-    std::cin>> assignmentScore4 ;
-    std::cout<< '\n';
-    int assignmentScore5 ;
-    std::cin>> assignmentScore5 ;
-    std::cout<< '\n';
-    float averageOfAssignmentScores ; /*making this a float because averages can have decimals*/
-    averageOfAssignmentScores = (assignmentScore1 + assignmentScore2 + assignmentScore3 + assignmentScore4 + assignmentScore5)/5.0 ; /* Parenthesis around the the assigment scores to honor PEMDAS rule, Divided by a float to obtain a float answer*/
-    std::cout<<"Average:\n" ;
-    std::cout<< averageOfAssignmentScores ;
+    int assignmentScore4;
+    int assignmentScore5;
+        std::cout<< " Please enter your assignment scores one by one:\n";
+        std::cin>> assignmentScore1 ;
+        std::cout<< '\n';
+        std::cin>> assignmentScore2;
+        std::cout<< '\n';
+        std::cin>> assignmentScore3;
+        std::cout<< '\n';
+        std::cin>> assignmentScore4;
+        std::cout<< '\n';
+        std::cin>> assignmentScore5;
+        std::cout<< '\n';
+    
+    /*Parenthesis around the assignment score to honor order of operations. Divide by 5.0 to make sure we get a float answer*/
+    float averageOfAssignmentScores;
+    averageOfAssignmentScores = (assignmentScore1 + assignmentScore2 + assignmentScore3 + assignmentScore4 + assignmentScore5)/5.0 ; 
+        std::cout<<"Average:\n";
+        std::cout<< averageOfAssignmentScores;
     
     
     
