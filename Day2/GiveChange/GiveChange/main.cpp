@@ -11,34 +11,31 @@ int main(int argc, const char * argv[]) {
     
     // assigning corresponding values to types of change one can recieve
     // Integers assigned because we are already dealing with cents and cannot have a decimal
-    int quarters = 25;
-    int dimes = 10;
-    int nickels = 5;
-    int pennies = 1;
-    int itemPriceInCents ;
-    int amountPaidInCents ;
+    int quarters;
+    int dimes;
+    int nickels;
+    int pennies;
+    int itemPriceInCents;
+    int amountPaidInCents;
     // Prompting user to enter item price and amount paid
         std::cout<< "Enter the item price in cents\n";
         std::cin>> itemPriceInCents ;
         std::cout<< "Enter amount paid in cents\n";
         std::cin>> amountPaidInCents ;
-    int remainingChange = amountPaidInCents - itemPriceInCents;
-        std::cout<< remainingChange << " cents in change" << '\n';
-    int leastCoinsReturned = remainingChange;
+    int change = amountPaidInCents - itemPriceInCents;
+        std::cout<< change << " cents in change" << '\n';
     
-    /*Start by dividing leastCoinsReturned/remainingChange by coin type to get leftover amount of coin type and assign it integer variable
-     leastCoinsReturned is equal to the remaining change minus the number of coin type in the change multiplied by coin type value. Process will run for quarters, dimes, nickels, and pennies*/
-    int numberOfQuartersInChange  = leastCoinsReturned / quarters;
-        leastCoinsReturned -= numberOfQuartersInChange * quarters;
-    int numberOfDimesInChange = leastCoinsReturned / dimes;
-        leastCoinsReturned -= numberOfDimesInChange *dimes;
-    int numberOfNickelsInChange  = leastCoinsReturned / nickels;
-        leastCoinsReturned -= numberOfNickelsInChange * nickels;
-    int numberOfPenniesInChange = leastCoinsReturned / pennies;
-        leastCoinsReturned -= numberOfPenniesInChange * pennies;
+    quarters = change/25;
+    change = change%25;
+    dimes = change/10;
+    change = change%10;
+    nickels = change/5;
+    change = change%5;
+    pennies = change/1;
+    change = change%1;
     
-    /*Prints categorized change received in least possible coins*/
-        std::cout<< "Quarters:" << numberOfQuartersInChange << '\n' << "Dimes:" << numberOfDimesInChange << '\n' << "Nickels:" << numberOfNickelsInChange << '\n' << "Pennies:" << numberOfPenniesInChange<< '\n';
+    
+        std::cout<< "Quarters:" << quarters << '\n' << "Dimes:" << dimes << '\n' << "Nickels:" << nickels << '\n' << "Pennies:" << pennies<< '\n';
     
     
     
