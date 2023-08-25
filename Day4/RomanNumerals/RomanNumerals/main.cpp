@@ -11,20 +11,22 @@ int main(int argc, const char * argv[]) {
     
     
     //Assign integer variable to user input
-    int decimalNumber;
     //Prompt user to enter a decimal number
-    /*std::cout<< " Enter a positive decimal number: \n";
-    std::cin>> decimalNumber;*/
+    /*run a continuous loop so that it ommits any number value less than 1 but allows user to keep attempting it they fail to enter a positive number*/
+   /*Add if statement to let user know response is invalid*/
+    int decimalNumber;
     
-    /*run a do loop so that it ommits any number value less than 1*/
     do {
         std::cout<< "Enter a positive decimal number: \n";
         std::cin>> decimalNumber;
+        if (decimalNumber < 1){
+            std::cout<< "Invalid Input\n";}
     } while(decimalNumber < 1);
+    
     
     //Printing description for Roman Numerals
     std::cout<< "Roman Numeral Version: \n";
-    
+    /*Run while looks to check in decimalNumber is over 1000 if so prints M then subtracts  1000 from decimal number. Repeats process until decimalNumber is no longer over 1000 then hits next while loop and so on and so forth*/
     while(decimalNumber >= 1000) {
         std::cout<< "M";
         decimalNumber -= 1000;

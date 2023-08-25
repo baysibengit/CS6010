@@ -22,10 +22,10 @@ int main(int argc, const char * argv[]) {
     }
     //check if strings are equal, output yes or no
     if(inputString == reversed) {
-        std::cout << reversed << " is a palindrome.\n";
+        std::cout << inputString << " is a palindrome.\n";
     }
         else{
-            std::cout << reversed << " is NOT a palindrome.\n";
+            std::cout << inputString << " is NOT a palindrome.\n";
         }
     return 0;
 }
