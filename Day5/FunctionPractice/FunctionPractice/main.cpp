@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <ctime>
 
 
 /*Give function type, parameters,and equation. Make sure to return function type*/
@@ -15,13 +16,16 @@ float hypotenuse( float triangSideLengthA, float triangSideLengthB){
     float hypotenuse = std::sqrt(pow(triangSideLengthA,2) + pow(triangSideLengthB,2));
     return hypotenuse;
 }
+
 //Give function type. Is bool can either be true or false.
 bool isCapitalized (std::string wordInputted){
     return std::isupper(wordInputted[0]);
 }
+
 /*Give function name. Assign string because that is what we want outputted*/
-std::string boolToString (bool isCapitalized, std::string wordInputted){
-    if(isCapitalized){
+std::string boolToString (bool value)
+{
+    if(value){
         return "true";
     }
     else{
@@ -100,7 +104,10 @@ int main(int argc, const char * argv[]) {
     }
     
     //Prints string true or false
-    std::cout<< &boolToString;
+    std::string output;
+    output = boolToString(isCapitalized(wordInputted)) ;
+    std::cout<< output << "\n";
+    
     
     
     
