@@ -19,11 +19,13 @@ int main(int argc, const char * argv[]) {
     do {
         std::cout<< "Enter a positive decimal number: \n";
         std::cin>> decimalNumber;
-        if (decimalNumber < 1){
-            std::cout<< "Invalid Input\n";}
+        
     } while(decimalNumber < 1);
     
-    
+//    if (decimalNumber < 1){
+//        std::cout<< "Invalid Input\n";
+//        return 1;
+//    }
     //Printing description for Roman Numerals
     std::cout<< "Roman Numeral Version: \n";
     /*Run while looks to check in decimalNumber is over 1000 if so prints M then subtracts  1000 from decimal number. Repeats process until decimalNumber is no longer over 1000 then hits next while loop and so on and so forth*/
