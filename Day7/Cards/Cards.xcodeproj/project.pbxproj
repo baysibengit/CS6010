@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94E41C812A9E583E0013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C802A9E583E0013B00D /* main.cpp */; };
-		94E41C922A9EA1520013B00D /* PoliticanTypeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */; };
+		94E41CA02A9EA5D50013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C9F2A9EA5D50013B00D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		94E41C7B2A9E583E0013B00D /* CopyFiles */ = {
+		94E41C9A2A9EA5D50013B00D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		94E41C7D2A9E583E0013B00D /* PoliStructs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PoliStructs; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E41C802A9E583E0013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PoliticanTypeHelper.cpp; sourceTree = "<group>"; };
-		94E41C912A9EA1520013B00D /* PoliticanTypeHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PoliticanTypeHelper.hpp; sourceTree = "<group>"; };
+		94E41C9C2A9EA5D50013B00D /* Cards */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cards; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E41C9F2A9EA5D50013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94E41C7A2A9E583E0013B00D /* Frameworks */ = {
+		94E41C992A9EA5D50013B00D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		94E41C742A9E583E0013B00D = {
+		94E41C932A9EA5D50013B00D = {
 			isa = PBXGroup;
 			children = (
-				94E41C7F2A9E583E0013B00D /* PoliStructs */,
-				94E41C7E2A9E583E0013B00D /* Products */,
+				94E41C9E2A9EA5D50013B00D /* Cards */,
+				94E41C9D2A9EA5D50013B00D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94E41C7E2A9E583E0013B00D /* Products */ = {
+		94E41C9D2A9EA5D50013B00D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94E41C7D2A9E583E0013B00D /* PoliStructs */,
+				94E41C9C2A9EA5D50013B00D /* Cards */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94E41C7F2A9E583E0013B00D /* PoliStructs */ = {
+		94E41C9E2A9EA5D50013B00D /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				94E41C802A9E583E0013B00D /* main.cpp */,
-				94E41C912A9EA1520013B00D /* PoliticanTypeHelper.hpp */,
-				94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */,
+				94E41C9F2A9EA5D50013B00D /* main.cpp */,
 			);
-			path = PoliStructs;
+			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94E41C7C2A9E583E0013B00D /* PoliStructs */ = {
+		94E41C9B2A9EA5D50013B00D /* Cards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E41C842A9E583E0013B00D /* Build configuration list for PBXNativeTarget "PoliStructs" */;
+			buildConfigurationList = 94E41CA32A9EA5D50013B00D /* Build configuration list for PBXNativeTarget "Cards" */;
 			buildPhases = (
-				94E41C792A9E583E0013B00D /* Sources */,
-				94E41C7A2A9E583E0013B00D /* Frameworks */,
-				94E41C7B2A9E583E0013B00D /* CopyFiles */,
+				94E41C982A9EA5D50013B00D /* Sources */,
+				94E41C992A9EA5D50013B00D /* Frameworks */,
+				94E41C9A2A9EA5D50013B00D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PoliStructs;
-			productName = PoliStructs;
-			productReference = 94E41C7D2A9E583E0013B00D /* PoliStructs */;
+			name = Cards;
+			productName = Cards;
+			productReference = 94E41C9C2A9EA5D50013B00D /* Cards */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		94E41C752A9E583E0013B00D /* Project object */ = {
+		94E41C942A9EA5D50013B00D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					94E41C7C2A9E583E0013B00D = {
+					94E41C9B2A9EA5D50013B00D = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 94E41C782A9E583E0013B00D /* Build configuration list for PBXProject "PoliStructs" */;
+			buildConfigurationList = 94E41C972A9EA5D50013B00D /* Build configuration list for PBXProject "Cards" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 94E41C742A9E583E0013B00D;
-			productRefGroup = 94E41C7E2A9E583E0013B00D /* Products */;
+			mainGroup = 94E41C932A9EA5D50013B00D;
+			productRefGroup = 94E41C9D2A9EA5D50013B00D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94E41C7C2A9E583E0013B00D /* PoliStructs */,
+				94E41C9B2A9EA5D50013B00D /* Cards */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94E41C792A9E583E0013B00D /* Sources */ = {
+		94E41C982A9EA5D50013B00D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E41C812A9E583E0013B00D /* main.cpp in Sources */,
-				94E41C922A9EA1520013B00D /* PoliticanTypeHelper.cpp in Sources */,
+				94E41CA02A9EA5D50013B00D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		94E41C822A9E583E0013B00D /* Debug */ = {
+		94E41CA12A9EA5D50013B00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		94E41C832A9E583E0013B00D /* Release */ = {
+		94E41CA22A9EA5D50013B00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +235,7 @@
 			};
 			name = Release;
 		};
-		94E41C852A9E583E0013B00D /* Debug */ = {
+		94E41CA42A9EA5D50013B00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		94E41C862A9E583E0013B00D /* Release */ = {
+		94E41CA52A9EA5D50013B00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94E41C782A9E583E0013B00D /* Build configuration list for PBXProject "PoliStructs" */ = {
+		94E41C972A9EA5D50013B00D /* Build configuration list for PBXProject "Cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41C822A9E583E0013B00D /* Debug */,
-				94E41C832A9E583E0013B00D /* Release */,
+				94E41CA12A9EA5D50013B00D /* Debug */,
+				94E41CA22A9EA5D50013B00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94E41C842A9E583E0013B00D /* Build configuration list for PBXNativeTarget "PoliStructs" */ = {
+		94E41CA32A9EA5D50013B00D /* Build configuration list for PBXNativeTarget "Cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41C852A9E583E0013B00D /* Debug */,
-				94E41C862A9E583E0013B00D /* Release */,
+				94E41CA42A9EA5D50013B00D /* Debug */,
+				94E41CA52A9EA5D50013B00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 94E41C752A9E583E0013B00D /* Project object */;
+	rootObject = 94E41C942A9EA5D50013B00D /* Project object */;
 }
