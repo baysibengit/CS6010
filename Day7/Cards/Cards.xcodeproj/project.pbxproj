@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94E41CA02A9EA5D50013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C9F2A9EA5D50013B00D /* main.cpp */; };
-		94E41CA82A9F929A0013B00D /* deckbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CA62A9F929A0013B00D /* deckbuilder.cpp */; };
+		94E41CD92A9FE97C0013B00D /* DeckHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CD72A9FE97C0013B00D /* DeckHelper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		94E41C9C2A9EA5D50013B00D /* Cards */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cards; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E41C9F2A9EA5D50013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		94E41CA62A9F929A0013B00D /* deckbuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deckbuilder.cpp; sourceTree = "<group>"; };
-		94E41CA72A9F929A0013B00D /* deckbuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = deckbuilder.hpp; sourceTree = "<group>"; };
+		94E41CD72A9FE97C0013B00D /* DeckHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeckHelper.cpp; sourceTree = "<group>"; };
+		94E41CD82A9FE97C0013B00D /* DeckHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DeckHelper.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				94E41C9F2A9EA5D50013B00D /* main.cpp */,
-				94E41CA62A9F929A0013B00D /* deckbuilder.cpp */,
-				94E41CA72A9F929A0013B00D /* deckbuilder.hpp */,
+				94E41CD72A9FE97C0013B00D /* DeckHelper.cpp */,
+				94E41CD82A9FE97C0013B00D /* DeckHelper.hpp */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E41CA82A9F929A0013B00D /* deckbuilder.cpp in Sources */,
+				94E41CD92A9FE97C0013B00D /* DeckHelper.cpp in Sources */,
 				94E41CA02A9EA5D50013B00D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
