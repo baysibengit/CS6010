@@ -5,7 +5,7 @@
 //  Created by Ben Baysinger  on 8/29/23.
 //
 
-#include "PoliticanTypeHelper.hpp"
+#include "PoliticianTypeHelper.hpp"
 #include <string>
 #include <vector>
 #include <iostream>

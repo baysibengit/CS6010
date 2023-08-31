@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "PoliticanTypeHelper.hpp"
+#include "PoliticianTypeHelper.hpp"
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {

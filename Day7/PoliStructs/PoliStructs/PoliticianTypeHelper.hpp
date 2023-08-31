@@ -5,8 +5,8 @@
 //  Created by Ben Baysinger  on 8/29/23.
 //
 
-#ifndef PoliticanTypeHelper_hpp
-#define PoliticanTypeHelper_hpp
+#ifndef PoliticianTypeHelper_hpp
+#define PoliticianTypeHelper_hpp
 #include <string>
 #include <vector>
 #include <stdio.h>

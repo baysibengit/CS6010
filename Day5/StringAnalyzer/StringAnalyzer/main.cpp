@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]){
         /* Use get line to prompt user to enter string of sentences*/
         /*Use while loop to allow user to enter multiple strings until they break loop and end by typing "done"*/
     //Initialize stringInput
-    std::string stringInput = " ";
+    std::string stringInput = "";
 
     while (stringInput != "done")
     {

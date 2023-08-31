@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94E41C812A9E583E0013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C802A9E583E0013B00D /* main.cpp */; };
-		94E41C922A9EA1520013B00D /* PoliticanTypeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */; };
+		94E41C922A9EA1520013B00D /* PoliticianTypeHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41C902A9EA1520013B00D /* PoliticianTypeHelper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		94E41C7D2A9E583E0013B00D /* PoliStructs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PoliStructs; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E41C802A9E583E0013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PoliticanTypeHelper.cpp; sourceTree = "<group>"; };
-		94E41C912A9EA1520013B00D /* PoliticanTypeHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PoliticanTypeHelper.hpp; sourceTree = "<group>"; };
+		94E41C902A9EA1520013B00D /* PoliticianTypeHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PoliticianTypeHelper.cpp; sourceTree = "<group>"; };
+		94E41C912A9EA1520013B00D /* PoliticianTypeHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PoliticianTypeHelper.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				94E41C802A9E583E0013B00D /* main.cpp */,
-				94E41C912A9EA1520013B00D /* PoliticanTypeHelper.hpp */,
-				94E41C902A9EA1520013B00D /* PoliticanTypeHelper.cpp */,
+				94E41C912A9EA1520013B00D /* PoliticianTypeHelper.hpp */,
+				94E41C902A9EA1520013B00D /* PoliticianTypeHelper.cpp */,
 			);
 			path = PoliStructs;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E41C812A9E583E0013B00D /* main.cpp in Sources */,
-				94E41C922A9EA1520013B00D /* PoliticanTypeHelper.cpp in Sources */,
+				94E41C922A9EA1520013B00D /* PoliticianTypeHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
