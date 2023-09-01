@@ -16,5 +16,11 @@ void testIsFlush();
 void testIsStraightIsFlush();
 void testIsPair();
 void testIsTriple();
-
+void testIsFullHouse();
 #endif /* PokerTests_hpp */
+
+
+
+
+
+

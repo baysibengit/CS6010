@@ -17,7 +17,7 @@ void ErrorExit( std::string message )
   exit(1); // Causes the entire program to exit.
 }
 
-//Test vectors 
+//Test vectors
 std::vector<int> straightOne { 1, 2, 3, 4, 5};
 std::vector<int> straightTwo {6, 7, 8, 9, 10};
 std::vector<int> notStraight {7, 4, 3, 3, 2};
@@ -55,6 +55,22 @@ std::vector<CardTypes> notStraightFlushHand = {
     {"Hearts", "Ten", 10}
 };
 
+std::vector<CardTypes> royalFlushHand = {
+    {"Hearts", "Ten", 10},
+    {"Hearts", "Jack", 11},
+    {"Hearts", "Queen", 12},
+    {"Hearts", "King", 13},
+    {"Hearts", "Ace", 14}
+};
+std::vector<CardTypes> notRoyalFlush = {
+       {"Hearts", "Ace", 14},
+       {"Hearts", "Six", 6},
+       {"Hearts", "Queen", 12},
+       {"Hearts", "Jack", 11},
+       {"Hearts", "Ten", 10}
+   };
+
+
 /*Test against two cases of striaghts and two cases of not straights while throwing repeats in*/
 void testIsStraight(){
     if (isStraight(straightOne) != true){
@@ -71,7 +87,7 @@ void testIsStraight(){
     }
 }
 
-//Testing flush hands and not flush hands 
+//Testing flush hands and not flush hands
 void testIsFlush(){
     assert(isFlush(flushHand)&& "isFlush function failed");
     assert(!isFlush(notFlushHand) && "isFlush function failed");
@@ -84,28 +100,18 @@ void testIsStraightIsFlush(){
     assert(!isStraightFlush(isFlush(notStraightFlushHand), isStraight(SortHand(notStraightFlushHand)))&& "IsStraightIsFlush function failed");
 }
 
-//Testing isPair function
-void testIsPair(){
-    assert(isPair(onePairHand) && "isPair function failed");
-    assert(isPair(multiplePairHand) && "isPair function failed ");
-    assert(!isPair(straightOne) && "isPair function failed");
-}
-
-//Testing isTriple function
-void testIsTriple(){
-    assert(isTriple(tripleHand) && "isTriple function failed");
-    assert(!isTriple(onePairHand) && "isTriple function failed");
-}
-
 //Testing full house function
-/*void testIsFullHouse(){
-    assert(isFullHouse(fullHouseHand)) && "isFullHouse function failed ");
-    assert(!isFullHouse(tripleHand)) && "isFullHouse function failed ");
+void testIsFullHouse(){
+    assert(isFullHouse(fullHouseHand) && "isFullHouse function failed ");
+    assert(!isFullHouse(tripleHand) && "isFullHouse function failed ");
     assert(!isFullHouse(onePairHand) && "isFullHouse function failed ");
     assert(!isFullHouse(straightOne) && "isFullHouse function failed ");
-}*/
+}
 
-
+void testRoyalFlush(){
+    assert(isRoyalFlush(isFlush(royalFlushHand), SortHand(royalFlushHand))&& "isRoyalFlush function failed");
+    assert(!isRoyalFlush(isFlush(notRoyalFlush), SortHand(notRoyalFlush))&& "isRoyalFlush function failed");
+}
 
 
 
