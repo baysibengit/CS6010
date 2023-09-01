@@ -29,6 +29,34 @@ void ErrorExit( std::string message )
   exit(1); // Causes the entire program to exit.
 }
 
+std::vector<int> negatives ={-1, -2, -3, -4};
+std::vector<int> singleDigit ={1};
+std::vector<int> maximum = {INT_MAX, 4, 5, 6};
+std::vector<int> minimum = {INT_MIN, 4, 5, 3};
+std::vector<int> repeats = {7, 7, 7};
+
+void TestFindMax(){
+
+    
+    if (FindMax(negatives) != -1){
+        ErrorExit("Find Max Failed negatives test");
+    }
+    if (FindMax(singleDigit) != 1){
+        ErrorExit("Find Max Failed single digit test");
+    }
+    if (FindMax(maximum) != INT_MAX){
+        ErrorExit("Find Max Failed maximum test");
+    }
+    if (FindMax(minimum) != 5){
+        ErrorExit("Find Max Failed minimum test");
+    }
+    if (FindMax(repeats) != 7){
+        ErrorExit("Find Max Failed repeats test");
+    }
+}
+    
+
+
 
 int main()
 {
@@ -86,19 +114,25 @@ int main()
         ErrorExit("Find Min() - test 4");
     }
     if (FindMin(v1) == 1){
-        ErrorExit("Find Min() - test 4");
+        ErrorExit("Find Min() - test 5");
     }
 
 //Testing average functions
     if (Average(v1) != 1){
-        ErrorExit("Average () - test 5");
+        ErrorExit("Average () - test 6");
+    }
+    if (Average(v1) == 3){
+        ErrorExit("Average () - test 7");
     }
     
+    
 //Testing IsSorted
-    assert(!IsSorted(v1));
+    assert(!IsSorted(v1) && "Shouldn't have been sorted!");
+    
     if (IsSorted(v1)){
-        ErrorExit("IsSorted () - test 7");
+        ErrorExit("IsSorted () - test 8");
     }
+    TestFindMax();
     
     
   // Since any failed test exits the program, if we made it this far, we passed all tests.

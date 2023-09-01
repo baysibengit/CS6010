@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94E41CB62A9FB6A90013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CB52A9FB6A90013B00D /* main.cpp */; };
-		94E41CBE2A9FBBBD0013B00D /* PokerHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CBC2A9FBBBD0013B00D /* PokerHelper.cpp */; };
-		94E41CEF2AA1AB350013B00D /* PokerTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CED2AA1AB350013B00D /* PokerTests.cpp */; };
+		94E41CE72AA1254B0013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CE62AA1254B0013B00D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		94E41CB02A9FB6A90013B00D /* CopyFiles */ = {
+		94E41CE12AA1254B0013B00D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		94E41CB22A9FB6A90013B00D /* Poker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Poker; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E41CB52A9FB6A90013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		94E41CBC2A9FBBBD0013B00D /* PokerHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PokerHelper.cpp; sourceTree = "<group>"; };
-		94E41CBD2A9FBBBD0013B00D /* PokerHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PokerHelper.hpp; sourceTree = "<group>"; };
-		94E41CED2AA1AB350013B00D /* PokerTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PokerTests.cpp; sourceTree = "<group>"; };
-		94E41CEE2AA1AB350013B00D /* PokerTests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PokerTests.hpp; sourceTree = "<group>"; };
+		94E41CE32AA1254B0013B00D /* BookAnalyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookAnalyzer; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E41CE62AA1254B0013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94E41CAF2A9FB6A90013B00D /* Frameworks */ = {
+		94E41CE02AA1254B0013B00D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,69 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		94E41CA92A9FB6A90013B00D = {
+		94E41CDA2AA1254B0013B00D = {
 			isa = PBXGroup;
 			children = (
-				94E41CB42A9FB6A90013B00D /* Poker */,
-				94E41CB32A9FB6A90013B00D /* Products */,
+				94E41CE52AA1254B0013B00D /* BookAnalyzer */,
+				94E41CE42AA1254B0013B00D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94E41CB32A9FB6A90013B00D /* Products */ = {
+		94E41CE42AA1254B0013B00D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94E41CB22A9FB6A90013B00D /* Poker */,
+				94E41CE32AA1254B0013B00D /* BookAnalyzer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94E41CB42A9FB6A90013B00D /* Poker */ = {
+		94E41CE52AA1254B0013B00D /* BookAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
-				94E41CB52A9FB6A90013B00D /* main.cpp */,
-				94E41CBC2A9FBBBD0013B00D /* PokerHelper.cpp */,
-				94E41CBD2A9FBBBD0013B00D /* PokerHelper.hpp */,
-				94E41CED2AA1AB350013B00D /* PokerTests.cpp */,
-				94E41CEE2AA1AB350013B00D /* PokerTests.hpp */,
+				94E41CE62AA1254B0013B00D /* main.cpp */,
 			);
-			path = Poker;
+			path = BookAnalyzer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94E41CB12A9FB6A90013B00D /* Poker */ = {
+		94E41CE22AA1254B0013B00D /* BookAnalyzer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E41CB92A9FB6A90013B00D /* Build configuration list for PBXNativeTarget "Poker" */;
+			buildConfigurationList = 94E41CEA2AA1254B0013B00D /* Build configuration list for PBXNativeTarget "BookAnalyzer" */;
 			buildPhases = (
-				94E41CAE2A9FB6A90013B00D /* Sources */,
-				94E41CAF2A9FB6A90013B00D /* Frameworks */,
-				94E41CB02A9FB6A90013B00D /* CopyFiles */,
+				94E41CDF2AA1254B0013B00D /* Sources */,
+				94E41CE02AA1254B0013B00D /* Frameworks */,
+				94E41CE12AA1254B0013B00D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Poker;
-			productName = Poker;
-			productReference = 94E41CB22A9FB6A90013B00D /* Poker */;
+			name = BookAnalyzer;
+			productName = BookAnalyzer;
+			productReference = 94E41CE32AA1254B0013B00D /* BookAnalyzer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		94E41CAA2A9FB6A90013B00D /* Project object */ = {
+		94E41CDB2AA1254B0013B00D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					94E41CB12A9FB6A90013B00D = {
+					94E41CE22AA1254B0013B00D = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 94E41CAD2A9FB6A90013B00D /* Build configuration list for PBXProject "Poker" */;
+			buildConfigurationList = 94E41CDE2AA1254B0013B00D /* Build configuration list for PBXProject "BookAnalyzer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,31 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 94E41CA92A9FB6A90013B00D;
-			productRefGroup = 94E41CB32A9FB6A90013B00D /* Products */;
+			mainGroup = 94E41CDA2AA1254B0013B00D;
+			productRefGroup = 94E41CE42AA1254B0013B00D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94E41CB12A9FB6A90013B00D /* Poker */,
+				94E41CE22AA1254B0013B00D /* BookAnalyzer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94E41CAE2A9FB6A90013B00D /* Sources */ = {
+		94E41CDF2AA1254B0013B00D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E41CB62A9FB6A90013B00D /* main.cpp in Sources */,
-				94E41CEF2AA1AB350013B00D /* PokerTests.cpp in Sources */,
-				94E41CBE2A9FBBBD0013B00D /* PokerHelper.cpp in Sources */,
+				94E41CE72AA1254B0013B00D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		94E41CB72A9FB6A90013B00D /* Debug */ = {
+		94E41CE82AA1254B0013B00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		94E41CB82A9FB6A90013B00D /* Release */ = {
+		94E41CE92AA1254B0013B00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,7 +235,7 @@
 			};
 			name = Release;
 		};
-		94E41CBA2A9FB6A90013B00D /* Debug */ = {
+		94E41CEB2AA1254B0013B00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		94E41CBB2A9FB6A90013B00D /* Release */ = {
+		94E41CEC2AA1254B0013B00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94E41CAD2A9FB6A90013B00D /* Build configuration list for PBXProject "Poker" */ = {
+		94E41CDE2AA1254B0013B00D /* Build configuration list for PBXProject "BookAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41CB72A9FB6A90013B00D /* Debug */,
-				94E41CB82A9FB6A90013B00D /* Release */,
+				94E41CE82AA1254B0013B00D /* Debug */,
+				94E41CE92AA1254B0013B00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94E41CB92A9FB6A90013B00D /* Build configuration list for PBXNativeTarget "Poker" */ = {
+		94E41CEA2AA1254B0013B00D /* Build configuration list for PBXNativeTarget "BookAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41CBA2A9FB6A90013B00D /* Debug */,
-				94E41CBB2A9FB6A90013B00D /* Release */,
+				94E41CEB2AA1254B0013B00D /* Debug */,
+				94E41CEC2AA1254B0013B00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 94E41CAA2A9FB6A90013B00D /* Project object */;
+	rootObject = 94E41CDB2AA1254B0013B00D /* Project object */;
 }

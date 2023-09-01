@@ -14,7 +14,7 @@
 */
 
 #include "VectorUtil.h"
-
+#include <iostream>
 /*
  * Determines whether or not a vector contains a certain item.
  *
@@ -51,6 +51,7 @@ int FindMin( vector<int> input )
 {
 //Initialize smallest with larger integer value
     int smallest = INT_MAX;
+    
 /*Run through vector and repeatedly check if number is smaller than number/s in vector. If it is it will replace smallest variable with the smaller number*/
     for(int i = 0 ; i< input.size();i++){
         if(input[i]< smallest){
@@ -70,14 +71,19 @@ int FindMin( vector<int> input )
  * Returns:
  *   The largest item in the vector
  */
+/* if (input.size() = = 0){
+ std::cout<< "Input vector size is 0";
+ exit(1);*/
 int FindMax( vector<int> input )
 {
 //Initialize largest with smaller integer
     int largest = INT_MIN;
+    
 /*Run through vector and repeatedly check if number is larger than number in vector. If it is it will replace largest variable with the larger number*/
     for(int i =0 ; i< input.size();i++){
         if(input[i]> largest){
             largest = input[i];
+            //std::cout<<"Largest: "<<largest;
         }
     }
     return largest;
@@ -137,9 +143,10 @@ bool IsSorted( std::vector<int> input )
             if (sortedInput == input){
                 return true;
             }
-            else {
-                return false;
-            }
+            return false;
+            
+    
+    return sortedInput == input;
 }
 
 
