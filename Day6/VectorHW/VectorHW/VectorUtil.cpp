@@ -27,6 +27,10 @@
  */
 bool Contains( vector<int> input, int lookFor )
 {
+//First check for empty vector size
+    if(input.size() == 0){
+        std::cout<< "Vector of empty size" << "\n"; exit(1);
+    }
 /*Run for loop to look through values of input and check if any of them are equal to/contain variable lookFor*/
     for (int a = 0; a < input.size(); a++){
         if( input [a]== lookFor){
@@ -49,6 +53,10 @@ bool Contains( vector<int> input, int lookFor )
  */
 int FindMin( vector<int> input )
 {
+//First check for empty vector size
+    if(input.size() == 0){
+        std::cout<< "Vector of empty size" << "\n"; exit(1);
+    }
 //Initialize smallest with larger integer value
     int smallest = INT_MAX;
     
@@ -76,6 +84,10 @@ int FindMin( vector<int> input )
  exit(1);*/
 int FindMax( vector<int> input )
 {
+//First check for empty vector size
+    if(input.size() == 0){
+        std::cout<< "Vector of empty size" << "\n"; exit(1);
+    }
 //Initialize largest with smaller integer
     int largest = INT_MIN;
     
@@ -102,6 +114,10 @@ int FindMax( vector<int> input )
  */
 int Average( vector<int> input )
 {
+//First check for empty vector size
+    if(input.size() == 0){
+        std::cout<< "Vector of empty size" << "\n"; exit(1);
+    }
 //Initialize sum
     int sum = 0;
 //Add all values of input and store in sum
@@ -135,18 +151,16 @@ int Average( vector<int> input )
  */
 bool IsSorted( std::vector<int> input )
 {
-    //Make a copy
-        std::vector<int> sortedInput = input;
-        //Sort vector
-            std::sort(sortedInput.begin(), sortedInput.end());
-        //Check if it matches up and return true
-            if (sortedInput == input){
-                return true;
-            }
+    //First check for empty vector size
+   if(input.size() == 0){
+        std::cout<< "Vector of empty size" << "\n"; exit(1);
+    }
+    for ( int a = 0; a < input.size() - 1; a++) {
+        if (input[a] > input[a + 1]){
             return false;
-            
-    
-    return sortedInput == input;
+        }
+       
+         }
+    return true;
 }
-
 
