@@ -2,7 +2,7 @@
 //  PokerHelpers.cpp
 //  Cards
 //
-//  Created by Zach Allred on 8/30/23.
+//  Created by Ben Baysinger && Jake Dame && Zach Allred on 8/30/23.
 //
 
 #include "PokerHelper.hpp"
@@ -183,7 +183,7 @@ int numFullHouse(bool checkFullHouse, int& fullHouseCounter){
 //output final stats using numbers generated in helper functions. Multiply by 100 for percentage.
 
 void ComputerStats(double runs, double full, double royal, double straight, double straightFlush, double flush){
-    std::cout << "Total runs: " << runs << "\n" << "Flush percentage:" << flush/runs*100 << "\n" << "Fullhouse percentage: " << full/runs*100 << "\n" << "Royal Flush percantage: " << royal/runs*100 << "\n" << "Straight percentage: " << straight/runs*100 << "\n" << "StraightFlush: " << straightFlush/runs*100 << "/n";
+    std::cout << "Total runs: " << runs << "\n" << "Flush percentage:" << (flush/runs)*100.0 << "\n" << "Fullhouse percentage: " << (full/runs)*100.0 << "\n" << "Royal Flush percantage: " << (royal/runs)*100.0 << "\n" << "Straight percentage: " << (straight/runs)*100.0 << "\n" << "StraightFlush: " << (straightFlush/runs)*100.0 << "\n";
 }
 
 

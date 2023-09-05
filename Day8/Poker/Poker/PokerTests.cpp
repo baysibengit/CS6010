@@ -2,7 +2,7 @@
 //  PokerTests.cpp
 //  Poker
 //
-//  Created by Ben Baysinger  on 8/31/23.
+//  Created by Ben Baysinger && Jake Dame && Zach Allred  on 8/31/23.
 //
 
 #include "PokerTests.hpp"
@@ -108,6 +108,7 @@ void testIsFullHouse(){
     assert(!isFullHouse(straightOne) && "isFullHouse function failed ");
 }
 
+//Testing royal flush function 
 void testRoyalFlush(){
     assert(isRoyalFlush(isFlush(royalFlushHand), SortHand(royalFlushHand))&& "isRoyalFlush function failed");
     assert(!isRoyalFlush(isFlush(notRoyalFlush), SortHand(notRoyalFlush))&& "isRoyalFlush function failed");

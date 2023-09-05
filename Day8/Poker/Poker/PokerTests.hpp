@@ -2,7 +2,7 @@
 //  PokerTests.hpp
 //  Poker
 //
-//  Created by Ben Baysinger  on 8/31/23.
+//  Created by Ben Baysinger && Jake Dame && Zach Allred on 8/31/23.
 //
 
 #ifndef PokerTests_hpp
@@ -17,6 +17,7 @@ void testIsStraightIsFlush();
 void testIsPair();
 void testIsTriple();
 void testIsFullHouse();
+void testRoyalFlush();
 #endif /* PokerTests_hpp */
 
 

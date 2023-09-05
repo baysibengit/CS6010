@@ -7,8 +7,15 @@
 
 #include <iostream>
 #include "PokerHelper.hpp"
-
+#include "PokerTests.hpp"
 int main(int argc, const char * argv[]) {
+    
+    //Test function calls
+    testIsStraight();
+      testIsFlush();
+      testIsStraightIsFlush();
+      testIsFullHouse();
+      testRoyalFlush();
     
     //resets counter each time for random.
     srand(time(0));
@@ -51,6 +58,8 @@ int main(int argc, const char * argv[]) {
     ComputerStats(runCounter, fullHouseCounter, royalFlushCounter,straightCounter, straightFlushCounter, flushCounter);
     //push out cards in deck to console.
 
+
+    
     return 0;
 }
 
