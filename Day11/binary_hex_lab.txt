@@ -21,3 +21,19 @@ C0 ==== 11000000 ==== 192
 FF ==== 11111111 ==== 255
 BEEF ==== 1011111011101111 ==== 48879
 F00D ==== 1111000000001101 ==== 61453
+
+
+What's the biggest number you can write using 8 binary digits? What is its value 
+in decimal, and hexadecimal? What's the significance of this number?
+
+Biggest number using 8 binary digits: 11111111
+Value in decimal: 255
+Value in hexidecimal: 0XFF
+This becomes significant with when it comes to chars because there is only 256 
+combinations of possible chars in an 8 bit system. It is 256 because it runs from 
+0 - 255. 
+
+
+Try counting from 0 to 31 on your fingers using binary. How many fingers do you 
+need?
+5 fingers
