@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		943BFFAF2AA927210008D837 /* BookAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFFAD2AA927210008D837 /* BookAnalyzer.cpp */; };
-		94E41CE72AA1254B0013B00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E41CE62AA1254B0013B00D /* main.cpp */; };
+		943BFF902AA7C9CC0008D837 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFF8F2AA7C9CC0008D837 /* main.cpp */; };
+		943BFF982AA8C7B10008D837 /* NumCon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFF962AA8C7B10008D837 /* NumCon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		94E41CE12AA1254B0013B00D /* CopyFiles */ = {
+		943BFF8A2AA7C9CC0008D837 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,15 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		943BFFAC2AA9249B0008D837 /* MobyDick.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MobyDick.txt; sourceTree = "<group>"; };
-		943BFFAD2AA927210008D837 /* BookAnalyzer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BookAnalyzer.cpp; sourceTree = "<group>"; };
-		943BFFAE2AA927210008D837 /* BookAnalyzer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BookAnalyzer.hpp; sourceTree = "<group>"; };
-		94E41CE32AA1254B0013B00D /* BookAnalyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookAnalyzer; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E41CE62AA1254B0013B00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		943BFF8C2AA7C9CC0008D837 /* NumberConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberConverter; sourceTree = BUILT_PRODUCTS_DIR; };
+		943BFF8F2AA7C9CC0008D837 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		943BFF962AA8C7B10008D837 /* NumCon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumCon.cpp; sourceTree = "<group>"; };
+		943BFF972AA8C7B10008D837 /* NumCon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumCon.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94E41CE02AA1254B0013B00D /* Frameworks */ = {
+		943BFF892AA7C9CC0008D837 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,68 +41,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		94E41CDA2AA1254B0013B00D = {
+		943BFF832AA7C9CC0008D837 = {
 			isa = PBXGroup;
 			children = (
-				94E41CE52AA1254B0013B00D /* BookAnalyzer */,
-				94E41CE42AA1254B0013B00D /* Products */,
+				943BFF8E2AA7C9CC0008D837 /* NumberConverter */,
+				943BFF8D2AA7C9CC0008D837 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94E41CE42AA1254B0013B00D /* Products */ = {
+		943BFF8D2AA7C9CC0008D837 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94E41CE32AA1254B0013B00D /* BookAnalyzer */,
+				943BFF8C2AA7C9CC0008D837 /* NumberConverter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94E41CE52AA1254B0013B00D /* BookAnalyzer */ = {
+		943BFF8E2AA7C9CC0008D837 /* NumberConverter */ = {
 			isa = PBXGroup;
 			children = (
-				94E41CE62AA1254B0013B00D /* main.cpp */,
-				943BFFAD2AA927210008D837 /* BookAnalyzer.cpp */,
-				943BFFAE2AA927210008D837 /* BookAnalyzer.hpp */,
-				943BFFAC2AA9249B0008D837 /* MobyDick.txt */,
+				943BFF8F2AA7C9CC0008D837 /* main.cpp */,
+				943BFF962AA8C7B10008D837 /* NumCon.cpp */,
+				943BFF972AA8C7B10008D837 /* NumCon.hpp */,
 			);
-			path = BookAnalyzer;
+			path = NumberConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94E41CE22AA1254B0013B00D /* BookAnalyzer */ = {
+		943BFF8B2AA7C9CC0008D837 /* NumberConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E41CEA2AA1254B0013B00D /* Build configuration list for PBXNativeTarget "BookAnalyzer" */;
+			buildConfigurationList = 943BFF932AA7C9CC0008D837 /* Build configuration list for PBXNativeTarget "NumberConverter" */;
 			buildPhases = (
-				94E41CDF2AA1254B0013B00D /* Sources */,
-				94E41CE02AA1254B0013B00D /* Frameworks */,
-				94E41CE12AA1254B0013B00D /* CopyFiles */,
+				943BFF882AA7C9CC0008D837 /* Sources */,
+				943BFF892AA7C9CC0008D837 /* Frameworks */,
+				943BFF8A2AA7C9CC0008D837 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BookAnalyzer;
-			productName = BookAnalyzer;
-			productReference = 94E41CE32AA1254B0013B00D /* BookAnalyzer */;
+			name = NumberConverter;
+			productName = NumberConverter;
+			productReference = 943BFF8C2AA7C9CC0008D837 /* NumberConverter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		94E41CDB2AA1254B0013B00D /* Project object */ = {
+		943BFF842AA7C9CC0008D837 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					94E41CE22AA1254B0013B00D = {
+					943BFF8B2AA7C9CC0008D837 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 94E41CDE2AA1254B0013B00D /* Build configuration list for PBXProject "BookAnalyzer" */;
+			buildConfigurationList = 943BFF872AA7C9CC0008D837 /* Build configuration list for PBXProject "NumberConverter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,30 +109,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 94E41CDA2AA1254B0013B00D;
-			productRefGroup = 94E41CE42AA1254B0013B00D /* Products */;
+			mainGroup = 943BFF832AA7C9CC0008D837;
+			productRefGroup = 943BFF8D2AA7C9CC0008D837 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94E41CE22AA1254B0013B00D /* BookAnalyzer */,
+				943BFF8B2AA7C9CC0008D837 /* NumberConverter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94E41CDF2AA1254B0013B00D /* Sources */ = {
+		943BFF882AA7C9CC0008D837 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				943BFFAF2AA927210008D837 /* BookAnalyzer.cpp in Sources */,
-				94E41CE72AA1254B0013B00D /* main.cpp in Sources */,
+				943BFF902AA7C9CC0008D837 /* main.cpp in Sources */,
+				943BFF982AA8C7B10008D837 /* NumCon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		94E41CE82AA1254B0013B00D /* Debug */ = {
+		943BFF912AA7C9CC0008D837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -192,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		94E41CE92AA1254B0013B00D /* Release */ = {
+		943BFF922AA7C9CC0008D837 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +241,7 @@
 			};
 			name = Release;
 		};
-		94E41CEB2AA1254B0013B00D /* Debug */ = {
+		943BFF942AA7C9CC0008D837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -251,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		94E41CEC2AA1254B0013B00D /* Release */ = {
+		943BFF952AA7C9CC0008D837 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,25 +260,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94E41CDE2AA1254B0013B00D /* Build configuration list for PBXProject "BookAnalyzer" */ = {
+		943BFF872AA7C9CC0008D837 /* Build configuration list for PBXProject "NumberConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41CE82AA1254B0013B00D /* Debug */,
-				94E41CE92AA1254B0013B00D /* Release */,
+				943BFF912AA7C9CC0008D837 /* Debug */,
+				943BFF922AA7C9CC0008D837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94E41CEA2AA1254B0013B00D /* Build configuration list for PBXNativeTarget "BookAnalyzer" */ = {
+		943BFF932AA7C9CC0008D837 /* Build configuration list for PBXNativeTarget "NumberConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94E41CEB2AA1254B0013B00D /* Debug */,
-				94E41CEC2AA1254B0013B00D /* Release */,
+				943BFF942AA7C9CC0008D837 /* Debug */,
+				943BFF952AA7C9CC0008D837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 94E41CDB2AA1254B0013B00D /* Project object */;
+	rootObject = 943BFF842AA7C9CC0008D837 /* Project object */;
 }

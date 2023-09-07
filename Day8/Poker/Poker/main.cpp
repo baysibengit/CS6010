@@ -58,6 +58,13 @@ int main(int argc, const char * argv[]) {
     ComputerStats(runCounter, fullHouseCounter, royalFlushCounter,straightCounter, straightFlushCounter, flushCounter);
     //push out cards in deck to console.
 
+/* Stats after program ran
+ Total runs: 1e+06
+ Flush percentage:0.257
+ Fullhouse percentage: 0.1411
+ Royal Flush percantage: 0.0001
+ Straight percentage: 0.3937
+ StraightFlush: 0.0016*/
 
     
     return 0;
