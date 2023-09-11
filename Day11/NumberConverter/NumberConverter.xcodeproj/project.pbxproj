@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		943BFF902AA7C9CC0008D837 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFF8F2AA7C9CC0008D837 /* main.cpp */; };
-		943BFF982AA8C7B10008D837 /* NumCon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFF962AA8C7B10008D837 /* NumCon.cpp */; };
+		943BFF982AA8C7B10008D837 /* NumConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943BFF962AA8C7B10008D837 /* NumConverter.cpp */; };
+		9461A7412AAA618400259FC8 /* NumberConverterTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9461A73F2AAA618400259FC8 /* NumberConverterTests.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,10 @@
 /* Begin PBXFileReference section */
 		943BFF8C2AA7C9CC0008D837 /* NumberConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		943BFF8F2AA7C9CC0008D837 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		943BFF962AA8C7B10008D837 /* NumCon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumCon.cpp; sourceTree = "<group>"; };
-		943BFF972AA8C7B10008D837 /* NumCon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumCon.hpp; sourceTree = "<group>"; };
+		943BFF962AA8C7B10008D837 /* NumConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumConverter.cpp; sourceTree = "<group>"; };
+		943BFF972AA8C7B10008D837 /* NumConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumConverter.hpp; sourceTree = "<group>"; };
+		9461A73F2AAA618400259FC8 /* NumberConverterTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberConverterTests.cpp; sourceTree = "<group>"; };
+		9461A7402AAA618400259FC8 /* NumberConverterTests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumberConverterTests.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				943BFF8F2AA7C9CC0008D837 /* main.cpp */,
-				943BFF962AA8C7B10008D837 /* NumCon.cpp */,
-				943BFF972AA8C7B10008D837 /* NumCon.hpp */,
+				943BFF962AA8C7B10008D837 /* NumConverter.cpp */,
+				943BFF972AA8C7B10008D837 /* NumConverter.hpp */,
+				9461A73F2AAA618400259FC8 /* NumberConverterTests.cpp */,
+				9461A7402AAA618400259FC8 /* NumberConverterTests.hpp */,
 			);
 			path = NumberConverter;
 			sourceTree = "<group>";
@@ -124,8 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9461A7412AAA618400259FC8 /* NumberConverterTests.cpp in Sources */,
 				943BFF902AA7C9CC0008D837 /* main.cpp in Sources */,
-				943BFF982AA8C7B10008D837 /* NumCon.cpp in Sources */,
+				943BFF982AA8C7B10008D837 /* NumConverter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
