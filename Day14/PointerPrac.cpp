@@ -1,3 +1,10 @@
+//
+//  main.cpp
+//  Throwaway
+//
+//  Created by Ben Baysinger  on 9/7/23.
+//
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -11,34 +18,38 @@ int capacity;
 };
 
 //Creating function to sum elments of array
-int arrayModSum (MyVector& someVar)
+double arrayModSum (MyVector& someVar)
 {
-    int result = 0;
+    double sum = 0;
     for (int i = 0; i < someVar.size; i++){
-        result += someVar.data[i] + 1;
+        sum += someVar.data[i] + 1;
     }
-    return  result;
+    return  sum;
 }
 
 //
 void growMyVector(MyVector& someVar){
     if (someVar.size == someVar.capacity){
         someVar.capacity = someVar.capacity * 2;
+        double* tempArray = new  double [someVar.capacity];
+
+        for (int i = 0; i < someVar.size; i++){
+            tempArray[i] = someVar.data[i];
+        }
+        //Delete someVar.data to free up space
+        delete [] someVar.data;
+        // Set someVar.data = the pointer to the temp array
+        someVar.data = tempArray;
+        //Set the pointer to the temp array to nullptr
+        tempArray = nullptr;
+
+        for (int i = someVar.size; i < someVar.capacity; i++){
+            someVar.data[i] = -1;
+        }
     }
-    double* tempArray = new  double [someVar.capacity];
-
-    for (int i = 0; i < someVar.size; i++){
-        tempArray[i] = someVar.data[i];
-    }
-//Delete someVar.data to free up space
-  //  delete[] someVar.data;
- // Set someVar.data = the pointer to the temp array
-    someVar.data = tempArray;
- //Set the pointer to the temp array to nullptr
-    tempArray = nullptr;
-
-
 }
+
+
 
 int main(int argc, const char * argv[]) {
 
@@ -75,12 +86,10 @@ int main(int argc, const char * argv[]) {
 // call a function to print the sum of the elements of the vector
     std::cout<<"Sum of elements plus one: " << arrayModSum(vec1) << "\n";
 
-//Clean up allocated array
-    delete [] vec1.data;
-
-
-// ====================PART TWO=======================
     growMyVector(vec1);
+    std::cout<< "Capacity of new vector: " << vec1.capacity << "\n";
+    delete[] vec1.data;
+
 
 
     return 0;
