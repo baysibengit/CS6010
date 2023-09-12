@@ -128,6 +128,17 @@ std::string IntToDecimalString(int integer){
     return decimalString;
 }
 
+/* std::string intToDecimalString(int input){
+ std::string decimalString;
+ while(input > 0){
+     int remainder = input % 10;
+     input = input / 10;
+     char value = remainder + '0';
+     decimalString = value + decimalString;
+ }
+ return decimalString;
+}*/
+
 // function that converts int to binary string
 std::string intToBinaryString(int integer){
 // initialize variables
