@@ -1,6 +1,6 @@
 Convert the following decimal numbers to binary and hexadecimal
 
-12 ==== 1100 ==== 0XD
+12 ==== 1100 ==== 0XC
 63 ==== 111111 ==== 0X3F
 100 ==== 1100100 ==== 0X64
 127 ==== 1111111 ==== 0X7F
@@ -9,7 +9,7 @@ Convert the following decimal numbers to binary and hexadecimal
 Convert the following binary numbers to decimal and hexadecimal
 
 100 ==== 4 ==== 0X4
-10001 ==== 9 ==== 0X9
+10001 ==== 17  ==== 0X11
 100010 ==== 34 ==== 0X22
 11000000 ==== 192 ==== 0XC0
 11111111 ==== 255 ==== 0XFF
