@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <cassert>
 /* Helper function to detetmine if politican is javacan*/
 bool isJavacans (Politician politician)
 {
@@ -58,3 +59,79 @@ std::vector <Politician> federalCplusers (std::vector<Politician> politicians)
     }
     return CplusFed;
 }
+
+//Function to exit program early if there is a failed test.
+void ErrorExit( std::string message )
+{
+  std::cerr << "Failed test: " << message << std::endl;
+  exit(1); // Causes the entire program to exit.
+}
+
+//Test Politicians
+Politician testPolitician {
+      "Guy", "Javacan", "State politician"
+    };
+    Politician testPoliticianTwo {
+      "John", "Cpluser", "Federal politician"
+    };
+    Politician testPoliticianThree {
+      "Doe", "Javacan", "State politician"
+    };
+    Politician testPoliticianFour {
+      "Dude", "Cpluser", "Federal politician"
+    };
+
+
+//Test Functions
+void testIsJavacan (){
+    assert(isJavacans(testPolitician) && "IsJavacan test failed for testPolitician");
+    assert(!isJavacans(testPoliticianTwo) && "IsJavacan test failed for testPoliticianTwo");
+}
+void testIsCpluser(){
+    assert(isCpluser(testPoliticianTwo) && "IsCpluser test failed for testPoliticianTwo");
+    assert(!isCpluser(testPolitician) && "IsCpluser test failed for testPoliticianTwo");
+}
+
+void testJavacans(){
+    //Test Politicians
+    Politician testPolitician {
+          "Guy", "Javacan", "State politician"
+        };
+        Politician testPoliticianTwo {
+          "John", "Cpluser", "Federal politician"
+        };
+        Politician testPoliticianThree {
+          "Doe", "Javacan", "State politician"
+        };
+        Politician testPoliticianFour {
+          "Dude", "Cpluser", "Federal politician"
+        };
+    std::vector<Politician> testPoliticians{
+        testPolitician, testPoliticianTwo, testPoliticianThree, testPoliticianFour
+    };
+    std::vector<Politician> result = (Javacans(testPoliticians));
+    
+    assert(Javacans(testPoliticians) == result && "Javacans test failed");
+}
+void testFederalCplusers(){
+    //Test Politicians
+    Politician testPolitician {
+          "Guy", "Javacan", "State politician"
+        };
+        Politician testPoliticianTwo {
+          "John", "Cpluser", "Federal politician"
+        };
+        Politician testPoliticianThree {
+          "Doe", "Javacan", "State politician"
+        };
+        Politician testPoliticianFour {
+          "Dude", "Cpluser", "Federal politician"
+        };
+    std::vector<Politician> testPoliticians{
+        testPolitician, testPoliticianTwo, testPoliticianThree, testPoliticianFour
+    };
+    std::vector<Politician> result = (federalCplusers(testPoliticians));
+    
+    assert(federalCplusers(testPoliticians) == result && "FederalCplusers test failed");
+}
+

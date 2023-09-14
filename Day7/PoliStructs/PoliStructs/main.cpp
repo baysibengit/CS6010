@@ -12,6 +12,15 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
+    //Call test functions
+    testJavacans();
+    testIsCpluser();
+    testIsJavacan();
+    testFederalCplusers();
+    
+    
+    
+    
 // Dummy politician names
     Politician politician1 {
       "John Stockton", "Javacan", "State politician"
