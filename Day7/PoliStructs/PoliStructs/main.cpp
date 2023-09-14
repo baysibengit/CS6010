@@ -13,10 +13,9 @@
 
 int main(int argc, const char * argv[]) {
     //Call test functions
-    testJavacans();
     testIsCpluser();
     testIsJavacan();
-    testFederalCplusers();
+    
     
     
     

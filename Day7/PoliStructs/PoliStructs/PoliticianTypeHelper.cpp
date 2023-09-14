@@ -84,54 +84,38 @@ Politician testPolitician {
 
 //Test Functions
 void testIsJavacan (){
+    //Test Politicians
+    Politician testPolitician {
+          "Guy", "Javacan", "State politician"
+        };
+        Politician testPoliticianTwo {
+          "John", "Cpluser", "Federal politician"
+        };
+        Politician testPoliticianThree {
+          "Doe", "Javacan", "State politician"
+        };
+        Politician testPoliticianFour {
+          "Dude", "Cpluser", "Federal politician"
+        };
     assert(isJavacans(testPolitician) && "IsJavacan test failed for testPolitician");
     assert(!isJavacans(testPoliticianTwo) && "IsJavacan test failed for testPoliticianTwo");
 }
 void testIsCpluser(){
+    //Test Politicians
+    Politician testPolitician {
+          "Guy", "Javacan", "State politician"
+        };
+        Politician testPoliticianTwo {
+          "John", "Cpluser", "Federal politician"
+        };
+        Politician testPoliticianThree {
+          "Doe", "Javacan", "State politician"
+        };
+        Politician testPoliticianFour {
+          "Dude", "Cpluser", "Federal politician"
+        };
     assert(isCpluser(testPoliticianTwo) && "IsCpluser test failed for testPoliticianTwo");
     assert(!isCpluser(testPolitician) && "IsCpluser test failed for testPoliticianTwo");
 }
 
-void testJavacans(){
-    //Test Politicians
-    Politician testPolitician {
-          "Guy", "Javacan", "State politician"
-        };
-        Politician testPoliticianTwo {
-          "John", "Cpluser", "Federal politician"
-        };
-        Politician testPoliticianThree {
-          "Doe", "Javacan", "State politician"
-        };
-        Politician testPoliticianFour {
-          "Dude", "Cpluser", "Federal politician"
-        };
-    std::vector<Politician> testPoliticians{
-        testPolitician, testPoliticianTwo, testPoliticianThree, testPoliticianFour
-    };
-    std::vector<Politician> result = (Javacans(testPoliticians));
-    
-    assert(Javacans(testPoliticians) == result && "Javacans test failed");
-}
-void testFederalCplusers(){
-    //Test Politicians
-    Politician testPolitician {
-          "Guy", "Javacan", "State politician"
-        };
-        Politician testPoliticianTwo {
-          "John", "Cpluser", "Federal politician"
-        };
-        Politician testPoliticianThree {
-          "Doe", "Javacan", "State politician"
-        };
-        Politician testPoliticianFour {
-          "Dude", "Cpluser", "Federal politician"
-        };
-    std::vector<Politician> testPoliticians{
-        testPolitician, testPoliticianTwo, testPoliticianThree, testPoliticianFour
-    };
-    std::vector<Politician> result = (federalCplusers(testPoliticians));
-    
-    assert(federalCplusers(testPoliticians) == result && "FederalCplusers test failed");
-}
 

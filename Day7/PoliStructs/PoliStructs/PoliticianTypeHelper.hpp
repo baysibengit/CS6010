@@ -19,9 +19,7 @@ bool isJavacans (Politician politician);
 bool isCpluser (Politician politician);
 std::vector<Politician> Javacans (std::vector<Politician> politicians);
 std::vector <Politician> federalCplusers (std::vector<Politician> politicians);
-void testJavacans();
 void testIsCpluser();
 void testIsJavacan ();
-void testFederalCplusers();
 void ErrorExit( std::string message );
 #endif /* PoliticanTypeHelper_hpp */
