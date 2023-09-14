@@ -6,3 +6,11 @@
 //
 
 #include "NumberRepresentations.hpp"
+
+
+bool approxEquals( double a, double b, double tolerance){
+    if(std::abs(a-b) < tolerance){
+        return true;
+    }
+    return false;
+}

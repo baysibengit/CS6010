@@ -28,6 +28,7 @@
 		943BFFA52AA8FA0D0008D837 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9461A7572AB0373D00259FC8 /* NumberRepresentations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberRepresentations.cpp; sourceTree = "<group>"; };
 		9461A7582AB0373D00259FC8 /* NumberRepresentations.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NumberRepresentations.hpp; sourceTree = "<group>"; };
+		9461A7702AB2AB6000259FC8 /* UTF-8-demo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "UTF-8-demo.txt"; path = "../../../../Downloads/UTF-8-demo.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				943BFFA52AA8FA0D0008D837 /* main.cpp */,
 				9461A7572AB0373D00259FC8 /* NumberRepresentations.cpp */,
 				9461A7582AB0373D00259FC8 /* NumberRepresentations.hpp */,
+				9461A7702AB2AB6000259FC8 /* UTF-8-demo.txt */,
 			);
 			path = NumberRepresentations;
 			sourceTree = "<group>";
