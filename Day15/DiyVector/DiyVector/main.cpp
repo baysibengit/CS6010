@@ -5,10 +5,20 @@
 //  Created by Ben Baysinger  on 9/12/23.
 //
 
-#include <iostream>
+#include "DiyVector.hpp"
+
+
+
+
+
+
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    MyVector v1;
+    v1.testFunctions();
+    
+    
+    
     return 0;
 }
