@@ -33,7 +33,7 @@ void MyVector::growVector()
 
 //Make push back function
 void MyVector::push_back(int value){
-    if (size_ + 1 == capacity_){
+    if (size_ + 1 >= capacity_){
         growVector();
     }
     data[size_] = value;
@@ -138,6 +138,11 @@ void MyVector::testFunctions (){
     MyVector v9 = makeVector(0);
     assert(v9.getSize() == 0 && "getSize method test failed for empty vector");
     assert(v9.getCapacity() == 0 && "getCapacity method test failed for empty vector");
-    
+    //Call push_back to test
+    v9.push_back(2);
+    assert(v9.size_ == 1 && "Pushback test failed on empty vector");
+    //test pop back after call
+    v9.pop_back();
+    assert(v9.size_ == 0 && "PopBack test function failed ");
 }
 
