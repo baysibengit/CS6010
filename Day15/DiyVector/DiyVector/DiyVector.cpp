@@ -26,7 +26,7 @@ void MyVector::growVector()
     }
     delete[] data;
     data = temp;
-    temp = nullptr;
+    temp = nullptr;//cleaned up for you
     capacity_*= 2;
 
 }
@@ -46,7 +46,7 @@ void MyVector::pop_back() {
     if (size_ > 0){
         size_--;
     }
-}
+}//else print statemetn
 
 //Set function
 void MyVector::set(int value, size_t pos){
@@ -57,6 +57,7 @@ void MyVector::set(int value, size_t pos){
 
 //Get function
 int MyVector::get (size_t pos){
+    //if checks for cleaner
     assert(pos < size_ && "Invalid Position!");
     assert(data != nullptr && "Invalid Pointer");
     return data[pos];
@@ -73,11 +74,13 @@ MyVector MyVector::makeVector(size_t initialCapacity )
 
 //Get size method
  unsigned long MyVector::getSize(){
+     //run if check to check if size is >= 0
      return size_;
 }
 
 //Get capacity method
 unsigned long MyVector::getCapacity(){
+    //run if check to check if capacity is >= 0
      return capacity_;
 }
 
