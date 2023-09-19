@@ -26,6 +26,13 @@ int main(int argc, const char * argv[]) {
     testGetCapacity();
     testCopyConstructor();
     testOperatorEquals();
+    testOperatorIndex();
+    testOperatorLessThan();
+    testOperatorGreaterThan();
+    testOperatorLessThanEqualToo();
+    testOperatorGreaterThanEqualToo();
+    testOperatorDoubleEquals();
+    testOperatorDoesNotEqual();
 
     
     

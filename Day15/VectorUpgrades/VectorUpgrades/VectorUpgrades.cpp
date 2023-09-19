@@ -2,7 +2,7 @@
 //  VectorUpgrades.cpp
 //  VectorUpgrades
 //
-//  Created by Ben Baysinger  on 9/13/23.
+//  Created by Ben Baysinger and Jake Dame  on 9/13/23.
 //
 
 #include "VectorUpgrades.hpp"
@@ -77,6 +77,78 @@ const int& MyVector::operator[] (size_t index) const
     //Returns what data lies within index
     return data[index];
 }
+
+/*
+ OPERATOR <: function that lexicographically compares another vector and this; function's logic is used to define the next three comparison functions
+ */
+bool MyVector::operator<(const MyVector& rhs) const
+{
+    // condition where this is larger than rhs returns false
+    if(size_ > rhs.size()) {
+        return false;
+    }
+    
+    /* for-loop that compares elements in tandem; continues to loop as long as this's element is not greater than rhs's element */
+    
+    for(size_t i = 0; i < size_; i++) {
+        if(data[i] > rhs[i]) {
+            return false;
+        }
+    }
+/* if neither of the false conditions have been triggered, this is smaller than rhs*/
+    return true;
+}
+    
+// see above; logic altered to return true if this is greater than rhs
+bool MyVector::operator>(const MyVector& rhs)const
+    {
+        return rhs < *this;
+    }
+    
+// see above; logic altered to return true if this is not greater than rhs
+bool MyVector::operator<=(const MyVector& rhs)const
+    {
+        return !(*this > rhs);
+    }
+
+
+// see above; logic altered to return true if this is not lesser than rhs
+bool MyVector::operator>=(const MyVector& rhs)const
+    {
+        return !(*this < rhs);
+    }
+
+/*
+ OPERATOR ==: function that compares this and another vector to determine equality; this function's logic is used to determine the following function as well
+ */
+bool MyVector::operator==(const MyVector& rhs)const
+{
+    // if the two objects being compared are not the same size, return false
+    if(size_ != rhs.size()) {
+        return false;
+    }
+    
+    // compare elements of the two vectors in tandem; any inequality triggers false
+    for(size_t i = 0; i < size_; i++) {
+        if(data[i] != rhs[i]) {
+            return false;
+        }
+    }
+    
+    // return true if neither false conditions have been triggered
+    return true;
+}
+
+// see above; logic altered to return true if this does not equal rhs
+bool MyVector::operator!=(const MyVector& rhs)const
+{
+    return !(*this == rhs);
+}
+
+
+    
+    
+ 
 
 //Size method
 size_t MyVector::size() const
@@ -247,6 +319,7 @@ void testCopyConstructor(){
        assert(v2[i] == copy[i] && "Copy constructor test failed for data check");
     }
 }
+
 void testOperatorEquals(){
     MyVector v7(5);
     v7.push_back(5);
@@ -262,6 +335,129 @@ void testOperatorEquals(){
     assert(v7.size() == v8.size() && "Operator = test failed for size check");
     assert(v7.capacity() == v8.capacity() && "Operator = test failed for capacity check");
 }
+
+void testOperatorIndex(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    
+    assert(v7[4] == 1 && "Operator index test failed");
+}
+
+void testOperatorLessThan(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    //Initialize another vector with less size and capacity
+    MyVector v6(1);
+    assert(v6.size() < v7.size() && "Operator less than function failed size check");
+    assert(v6.capacity() < v7.capacity() && "Opreator less than function failed capcity check");
+}
+
+void testOperatorGreaterThan(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    //Initialize another vector with less size and capacity
+    MyVector v6(1);
+    assert(v7.size() > v6.size() && "Operator greater than function failed size check");
+    assert(v7.capacity() > v6.capacity() && "Operator greater than function failed capcity check");
+}
+
+void testOperatorLessThanEqualToo(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    
+    MyVector v6(5);
+    v6.push_back(5);
+    v6.push_back(3);
+    v6.push_back(6);
+    v6.push_back(2);
+    v6.push_back(1);
+    
+    assert(v7.size() >= v6.size() && "Operator less than or equal too failed size check");
+    assert(v7.capacity() >= v6.capacity() && "Operator less than or equal too failed capacity check");
+}
+
+void testOperatorGreaterThanEqualToo(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    
+    MyVector v6(5);
+    v6.push_back(5);
+    v6.push_back(3);
+    v6.push_back(6);
+    v6.push_back(2);
+    v6.push_back(1);
+    
+    assert(v6.size() <= v7.size() && "Operator greater than or equal too failed size check");
+    assert(v6.capacity() <= v7.capacity() && "Operator greater than or equal too failed capacity check");
+}
+
+void testOperatorDoubleEquals(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    
+    MyVector v6(5);
+    v6.push_back(5);
+    v6.push_back(3);
+    v6.push_back(6);
+    v6.push_back(2);
+    v6.push_back(1);
+    
+   assert(v6 == v7 && "Operator == test failed");
+   assert(v6.size() == v7.size() && "Operator == test failed size check");
+   assert(v6.capacity() == v7.capacity() && "Operator == test failed capacity check");
+}
+
+void testOperatorDoesNotEqual(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    
+    MyVector v6(5);
+    v6.push_back(8);
+    v6.push_back(0);
+    v6.push_back(5);
+    v6.push_back(2);
+    v6.push_back(1);
+    v6.push_back(9);
+    v6.push_back(1);
+    v6.push_back(2);
+    v6.push_back(1);
+    v6.push_back(4);
+    
+   assert(v6 != v7 && "Operator != test failed");
+   assert(v6.size() != v7.size() && "Operator != test failed size check");
+   assert(v6.capacity() != v7.capacity() && "Operator != test failed capacity check");
+}
+
+
+
 
 
 
