@@ -2,6 +2,10 @@
 //  TemplateVector.cpp DiyVector Created by Ben Baysinger and Jake Dame on 9/18/23.
 
 #include "TemplateVector.hpp"
+//Helper function for count_if
+bool isEven(double num) {
+    return static_cast<int>(num) % 2 == 0;
+}
 
 void testMethods() {
 
@@ -73,4 +77,43 @@ void testMethods() {
     
     std::cout << "All tests passed.\n";
 
+}
+
+//Function for LabSTLVector
+void testLabSTLVector (){
+    Vektor<double> doubles1;
+    doubles1.push_back(3.14159);
+    doubles1.push_back(-3.14159);
+    doubles1.push_back(728);
+    doubles1.push_back(1.1);
+    doubles1.push_back(2.0);
+    doubles1.push_back(4.0);
+    doubles1.push_back(6.0);
+    
+    //Calling print vector function to print out contents
+    std::cout<< "Elements in doubles1 vector: \n"; printVector(doubles1);
+    
+    //Checking std::sort
+    std::sort(doubles1.begin(), doubles1.end());
+    std::cout<< "Sorted elements in doubles1 vector: \n";
+    printVector(doubles1);
+    
+    //Storing element of min_element in variable and printing
+    auto min = std::min_element(doubles1.begin(), doubles1.end());
+    std::cout<< "Minimum element of doubles1 vector: " <<  *min << "\n";
+    
+    //Same process for sum
+    auto sum = std::accumulate(doubles1.begin(), doubles1.end(), 0);
+    std::cout<< "Sum of values in double1 vector: " << sum << "\n";
+    
+    //Count if. Calls helper function to determine if even
+    int count = std::count_if(doubles1.begin(), doubles1.end(), isEven);
+        std::cout<< "Number of even elements in vector: " << count << "\n";
+    //Lambda form of count if
+    int countLambdaForm = std::count_if(doubles1.begin(), doubles1.end(), [](double num) {
+        return static_cast<int>(num) % 2 == 0;
+    });
+    std::cout<< "Number of even elements in vector using lambda: " << countLambdaForm << "\n";
+    //Remove if. Calls helper functoin 
+    auto vecWithoutEven = std::remove_if(doubles1.begin(), doubles1.end(), isEven);
 }

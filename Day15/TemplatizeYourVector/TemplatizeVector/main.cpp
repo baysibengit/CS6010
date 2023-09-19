@@ -5,11 +5,11 @@
 
 int main(int argc, const char * argv[]) {
         
-    
+
     testMethods();
-    
+
 //     FOR CODE REVIEW DEMO
-    
+
     Vektor<std::string> fruit;
     fruit.push_back("Apple");
     fruit.push_back("Banana");
@@ -54,6 +54,9 @@ int main(int argc, const char * argv[]) {
     V3.push_back(1.2345);
     V3.push_back(728.827);
 
+
+
+
     Vektor<double> V4;
     V4.push_back(1);
     V4.push_back(-2);
@@ -83,6 +86,12 @@ int main(int argc, const char * argv[]) {
     V5.print();
     std::cout << "\n";
 
+    
+//*******************Lab: STL and MyVector***********************
+    
+    testLabSTLVector();
+    
+    
     
     return 0;
 }

@@ -7,9 +7,11 @@
 #include <cassert>
 #include <vector>
 #include <string>
+#include <numeric>
 
 // test functions - see imp file
 void testMethods();
+void testLabSTLVector ();
 
 //================================DECLARATIONS=========================================
 
@@ -20,7 +22,7 @@ template<typename T>
 class Vektor
 {
     
-// declare private member variables and function
+    // declare private member variables and function
 private:
     
     // pointer to a memory address on the heap
@@ -76,9 +78,32 @@ public:
     bool operator>=(const Vektor<T>& rhs);
     bool operator==(const Vektor<T>& rhs);
     bool operator!=(const Vektor<T>& rhs);
-
+    
+    
+        T* begin()
+        {
+            return m_data;
+    
+        }
+        T* end()
+        {
+            return m_data + m_size;
+    
+        }
+    
+        const T* begin() const
+        {
+            return m_data;
+    
+        }
+        const T* end() const
+        {
+            return m_data + m_size;
+    
+        }
+    
+    
 };
-
 
 //==========================DEFINITIONS FOR TEMPLATE CLASS============================
 
@@ -576,3 +601,13 @@ bool Vektor<T>::operator!=(const Vektor<T>& rhs)
 {
     return !(*this == rhs);
 }
+
+//Print vector function for Lab STL Vector
+template<typename T>
+void printVector (const Vektor<T>& vec)
+{
+    for (auto c : vec){
+        std::cout<< c << "\n";
+    }
+}
+
