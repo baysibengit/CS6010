@@ -52,6 +52,8 @@ void testGet();
 void testGrow();
 void testGetSize();
 void testGetCapacity();
+void testCopyConstructor();
+void testOperatorEquals();
 
 ////Constructor function that takes in capacity.
 //MyVector::MyVector(size_t capacity)

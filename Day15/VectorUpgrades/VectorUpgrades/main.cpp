@@ -24,6 +24,8 @@ int main(int argc, const char * argv[]) {
     testGrow();
     testGetSize();
     testGetCapacity();
+    testCopyConstructor();
+    testOperatorEquals();
 
     
     

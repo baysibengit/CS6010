@@ -54,25 +54,27 @@ MyVector::MyVector(const MyVector& rhs)
 MyVector& MyVector::operator=(const MyVector& rhs)
 {
     if (this != &rhs) {
+        //Delete Data
         delete[] data;
+        //Copy size and double capacity
         size_ = rhs.size();
         capacity_ = 2 * size_;
-        return *this;
-    }
-    if(capacity_ > 0) {
+        //Allocate memory
         data = new int [capacity_];
+        //Copy over data
         for (size_t i = 0; i < rhs.size(); i++) {
             data[i] = rhs.data[i];
             }
     }
-    
     return *this;
 }
 
 //Operator [] function
 const int& MyVector::operator[] (size_t index) const
 {
+    //First check that index is less than size
     assert(index < size_ && "Out of bounds in operator[]!");
+    //Returns what data lies within index
     return data[index];
 }
 
@@ -239,12 +241,28 @@ void testCopyConstructor(){
     v1.push_back(2);
     v1.push_back(1);
     MyVector v2(5);
-    v1 = v2;
-    
-    assert(v1.size() == v2.size() && "Copy Constructor test failed for data check");
-    
-    
+    MyVector copy(v2);
+    assert(copy.size() == v2.size() && "Copy Constructor test failed for size check");
+    for (size_t i = 0; i < v2.size(); i++){
+       assert(v2[i] == copy[i] && "Copy constructor test failed for data check");
+    }
 }
+void testOperatorEquals(){
+    MyVector v7(5);
+    v7.push_back(5);
+    v7.push_back(3);
+    v7.push_back(6);
+    v7.push_back(2);
+    v7.push_back(1);
+    MyVector v8(0);
+    v7 = v8;
+    for( size_t i = 0; i < v7.size(); i++){
+        assert(v7[i] == v8[i] && "Operator = test failed for data check");
+    }
+    assert(v7.size() == v8.size() && "Operator = test failed for size check");
+    assert(v7.capacity() == v8.capacity() && "Operator = test failed for capacity check");
+}
+
 
 
 
